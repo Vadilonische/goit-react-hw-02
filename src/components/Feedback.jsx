@@ -1,3 +1,15 @@
-export default function Feedback() {
-  return <div></div>;
+export default function Feedback({
+  totalFeedback,
+  positiveFeedback,
+  feedback: { good, neutral, bad },
+}) {
+  return (
+    <ul>
+      <li>Good:{good}</li>
+      <li>Neutral:{neutral}</li>
+      <li>Bad:{bad}</li>
+      <li>Total:{totalFeedback}</li>
+      <li>Positive:{positiveFeedback}%</li>
+    </ul>
+  );
 }
