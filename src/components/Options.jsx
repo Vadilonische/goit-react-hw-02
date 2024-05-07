@@ -1,10 +1,12 @@
+import css from './Options.module.css';
+
 export default function Options({
   updateFeedback,
   handleReset,
   totalFeedback,
 }) {
   return (
-    <div>
+    <div className={css.buttons}>
       <button onClick={() => updateFeedback('good')} type="button">
         Good
       </button>
